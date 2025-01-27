@@ -8,7 +8,7 @@ function auth(req, res, next) {
     if (!token) return res.status(401).send('Access denied. No token provided.');
 
     try {
-        const decoded = jwt.verify(token, config.get('jwtPrivateKey')); // jwtPrivateKey is the private key, which is used to create a jwttoken's signature, we will get it from environment variable
+        const decoded = jwt.verify(token, "heelo"); // jwtPrivateKey is the private key, which is used to create a jwttoken's signature, we will get it from environment variable
         req.user = decoded; // we are storing the decoded payload in the request object
         next();
     } catch (ex) {
