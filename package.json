@@ -2,8 +2,12 @@
   "name": "faisal-abdullah",
   "version": "1.0.0",
   "main": "index.js",
+  "engines":{
+    "node": "22.x"
+  },
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",

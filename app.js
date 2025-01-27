@@ -5,10 +5,9 @@ const express = require('express');
 //const Fawn = require('fawn');
 const app = express();
 
-require('./startup/errLogs')();
-require('./startup/routes')(app);
-require('./startup/db')();
-
+require('./sunday/vidly/startup/errLogs')();
+require('./sunday/vidly/startup/routes')(app);
+require('./sunday/vidly/startup/db')();
 
 //$env:vidly_jwtPrivateKey="putanythinghere"
 if (!config.get('jwtPrivateKey')) {
