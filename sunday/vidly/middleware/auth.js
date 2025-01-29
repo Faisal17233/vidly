@@ -1,7 +1,7 @@
 // this will be used to authenticate the user by their jwt when they request any operation
 // we will use this middleware in the route handler
 const jwt = require('jsonwebtoken');
-const config = require('config');
+//const config = require('config');
 
 function auth(req, res, next) {
     const token = req.header('x-auth-token');

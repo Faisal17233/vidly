@@ -1,4 +1,4 @@
-const config = require("config");
+//const config = require("config");
 const {User} = require("../../../sunday/vidly/models/user")
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
