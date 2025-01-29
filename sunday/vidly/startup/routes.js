@@ -17,7 +17,9 @@ module.exports = function (app) {
     app.use('/api/rentals', rentals);
     app.use('/api/users', users);
     app.use('/api/auth', auth);
-    app.use('/api/returns', returns)
-
+    app.use('/api/returns', returns);
+    app.use('/test', (req, res) => {
+        res.json('test');
+    });
     app.use(error); // to handle errors, always have this use at the end of all the routes
 }
