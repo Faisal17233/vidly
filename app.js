@@ -15,5 +15,5 @@ require('./sunday/vidly/startup/db')();
 // }
 
 //throw new Error('Something failed during startup'); // to test the process.on error handle
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 module.exports = app.listen(port, () => console.log(`Listening on port ${port}`));
