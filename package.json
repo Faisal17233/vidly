@@ -1,14 +1,13 @@
 {
   "name": "faisal-abdullah",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "engines":{
     "node": "22.x"
   },
   "scripts": {
     "test": "jest --verbose",
-    "start": "node app.js",
-    "main": "app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
